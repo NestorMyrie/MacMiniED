@@ -1,0 +1,113 @@
+/* 
+@media screen and (min-width:350px){
+
+}
+
+@media screen and (min-width:734px){
+
+}
+
+@media screen and (min-width:1024px){
+
+} */
+:root {
+
+    --text-color: #fff;
+    --text-color-alt: #a1a1a6;
+    --accent-color: #0071e3;
+    --accent-color-alt: #2997ff;
+    --body-bg: #000;
+    --bg-color:#151516;
+    --bg-color-alt:#1d1d1f ;
+
+    /* Utils */
+    --height-header:3rem;
+
+    --z-negative:-1;
+    --z-normal:1;
+    --z-sticky:50;
+    --vartime:150ms;
+    --header-line-height:3rem;
+    --time:150ms;
+    --large-max-width:91%;
+    --medium-max-width:83%;
+    --small--max-width:75%;
+
+    
+
+}
+
+
+
+
+
+html{
+scroll-padding-top:calc(var(--height-header) + 3rem) ;
+scroll-behavior: smooth;
+}
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    color: var(--text-color);
+    font-family: var(--body-font);
+    background-color: var(--body-bg);
+    overflow-x: hidden;
+
+}
+
+button {
+    all: unset;
+    cursor: pointer;
+}
+
+a {
+    color: var(--accent-color-alt);
+    text-decoration: none;
+}
+
+
+a:hover{
+    text-decoration: underline;
+}
+
+
+a.arrow{
+    display: inline-block;
+
+}
+a.arrow::after{
+    content:'\e900';
+    display:inline;
+    padding-left: 0.25rem;
+    font-size: 0.65rem;
+    font-family: 'icomoon' !important;
+}
+
+.black-background{
+   background-color: var(--bg-color);
+}
+.black-background-alt{
+    background-color:var(--bg-color-alt);
+}
+
+/* ELIMINAR ESTO CUANDO YA SE TENGAN LAS SECCIONES */
+
+.section-place-holder{
+    min-height: 100vh;
+}
+
+
+
+
+.main{
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+}

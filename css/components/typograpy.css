@@ -1,0 +1,143 @@
+@font-face{
+    font-family: "SF Pro Text";
+    font-style: normal;
+    font-weight: 400;
+    font-display:auto;
+    src: local("SF Pro Text"), url('/fonts/SFProText-Regular.woff2') format('wiff2');
+}
+
+
+@font-face{
+    font-family: "SF Pro Display";
+    font-style: normal;
+    font-weight: 400;
+    font-display:auto;
+    src: local("SF Pro Text"), url('/fonts/SFProDisplay-Regular.woff2') format('wiff2');
+ 
+}
+
+
+
+@font-face{
+    font-family: "SF Pro Display";
+    font-style: normal;
+    font-weight: 500;
+    font-display:auto;
+    src: local("SF Pro Text"), url('/fonts/SFProDisplay-Medium.woff2') format('wiff2');
+ 
+}
+
+@font-face{
+    font-family: "SF Pro Display";
+    font-style: normal;
+    font-weight: 600;
+    font-display:auto;
+    src: local("SF Pro Text"), url('/fonts/SFProDisplay-Semibold.woff2') format('wiff2');
+ 
+}
+
+
+@font-face{
+    font-family: "SF Pro Display";
+    font-style: normal;
+    font-weight: 700;
+    font-display:auto;
+    src: local("SF Pro Text"), url('/fonts/SFProDisplay-Bold.woff2') format('wiff2');
+ 
+}
+
+
+:root{
+     /*Family*/
+     --body-font:"SF Pro Text", sans-serif;
+     --display-font: "SF Pro Display", sans-serif;
+ 
+     /* Body Size */
+     --smaller-body-size: 0.75rem; /*12px*/
+     --big-body-size:1.25rem; /*20px*/
+     --bigger-body-size:1.5rem; /*24px*/
+ 
+     /* Tittle Font Size */
+     --small-title-size:2rem; /*32px*/
+     --normal-title-size:2.5rem; /*40px*/
+     --big-title-size:2.5rem; /*40px*/
+     --bigger-title-size:2.5rem; /*40px*/
+ 
+     /* Weight */
+     --normal-font:400;
+     --medium-font:500;
+     --semi-bold-font:600;
+     --bold-font:700;
+ 
+     /* Line Height */
+     --line-title-height:1.15
+ 
+}
+
+@media screen and (min-width:734px){
+:root{
+    --body-font-size:1.5rem;
+    --bigger-body-size:1.75rem
+
+    /* tittle Size */
+    --small-tittle-size:2.5rem;
+    --bigger-tittle-size:4rem;
+}
+}
+@media screen and (min-width:1024px){
+    :root{
+        --small-body-size:1rem;
+        --normal-body-size:1.25rem;
+        --big-body-size:1.75rem;
+        --biggers-body-size:2rem;
+
+        /* Titte font size */
+
+        --small-title-size:3rem;
+        --normal-title-size:3.5rem;
+        --big-title-size:4rem;
+        --bigger-title-size:5rem;
+    }
+}
+
+h1,h2,h3,h4,h5,h6{
+
+    font-family: var(--display-font);
+    font-weight: var(--semi-bold-font);
+}
+
+.display-font{
+    font-family: var(--display-font);
+}
+
+.body-font{
+    font-family: var(--body-font);
+}
+.big-title{
+    font-size: var(--bigger-title-size);
+    font-weight: var(--bold-font);
+    letter-spacing: -0.05rem;
+    margin-bottom: 0.75rem;
+}
+.big-description{
+    color: var(--text-color-alt);
+    font-size: var(--big-body-size);
+    font-weight: var(--medium-font);
+    line-height: var(--title-line-height);
+    max-width: var(--large-max-width);
+}
+@media screen and (min-width:734px){
+
+    .big-description{
+        max-width: var(--large-max-width);
+    }
+}
+
+
+
+@media screen and (min-width:1024px){
+
+    .big-description{
+        max-width: var(--small-max-width);
+    }
+}
